@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 @objc(ManagedFeedCache)
-internal class ManagedFeedCache: NSManagedObject {
+final class ManagedFeedCache: NSManagedObject {
 	@NSManaged internal var timestamp: Date
 	@NSManaged internal var feed: NSOrderedSet
 }
